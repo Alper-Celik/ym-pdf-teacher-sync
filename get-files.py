@@ -44,8 +44,6 @@ def main():
     sleep(1)
     driver.quit()
 
-    os.execv("./extract-and-upload.sh", [])
-
 
 if __name__ == "__main__":
     main()
