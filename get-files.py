@@ -19,7 +19,11 @@ def check_zip(_) -> bool:
 
 
 def main():
+    if not Path(download_dir).exists():
+        Path(download_dir).mkdir()
+
     options = Options()
+    options.add_argument("--headless")
     options.set_preference("browser.download.folderList", 2)
     options.set_preference("browser.download.manager.showWhenStarting", False)
     options.set_preference("browser.download.dir",

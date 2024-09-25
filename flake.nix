@@ -43,6 +43,9 @@
 
                 geckodriver
                 firefox
+
+                rclone
+                unzip
               ];
             };
         }
