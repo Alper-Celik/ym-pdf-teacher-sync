@@ -21,6 +21,7 @@ unzip-dir(){
 setup-rclone-cfg(){
   if [[ -v RCLONE_CONF_TEXT ]]; then 
     printf "\n\n>>creating rclone config: \n"
+    mkdir -p ~/.config/rclone
     echo "${RCLONE_CONF_TEXT}" > ~/.config/rclone/rclone.conf
     printf "\n>>created rclone config"
   fi
