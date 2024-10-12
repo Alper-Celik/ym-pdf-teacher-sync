@@ -31,15 +31,19 @@ def main():
     options.set_preference(
         "browser.helperApps.neverAsk.saveToDisk", "application/x-gzip")
 
+    print(">>> going to website")
     driver = webdriver.Firefox(options=options)
     driver.get(sharepoint_download_url)
 
+    print(">>> waiting for download button")
     _ = WebDriverWait(driver, 60).until(
         EC.presence_of_element_located((By.NAME, "Download")))
 
+    print(">>> clicking download button")
     elem = driver.find_element(By.NAME, "Download")
     elem.click()
 
+    print(">>> waiting for zip file to download")
     _ = WebDriverWait(driver, 60).until(check_zip)
     sleep(1)
     driver.quit()
