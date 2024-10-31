@@ -45,7 +45,7 @@ def main():
 
     print(">>> waiting for zip file to download")
     _ = WebDriverWait(driver, 60).until(check_zip)
-    sleep(1)
+    sleep(5)
     driver.quit()
 
 
