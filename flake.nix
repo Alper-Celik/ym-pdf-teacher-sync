@@ -34,6 +34,7 @@
               python-with-my-packages = my-python.withPackages (
                 p: with p; [
                   selenium
+                  ipython
                 ]
               );
             in
