@@ -15,7 +15,7 @@ download_dir = os.getcwd() + "/downloads"
 
 
 def check_zip(_) -> bool:
-    return os.listdir(download_dir) != [] and list(Path(download_dir).glob(".part")) == []
+    return os.listdir(download_dir) != [] and list(Path(download_dir).glob("*.part")) == []
 
 
 def main():
@@ -37,10 +37,10 @@ def main():
 
     print(">>> waiting for download button")
     _ = WebDriverWait(driver, 60).until(
-        EC.presence_of_element_located((By.NAME, "Download")))
+        EC.presence_of_element_located((By.CSS_SELECTOR, "[data-id='download']")))
 
     print(">>> clicking download button")
-    elem = driver.find_element(By.NAME, "Download")
+    elem = driver.find_element(By.CSS_SELECTOR, "[data-id='download']")
     elem.click()
 
     print(">>> waiting for zip file to download")
