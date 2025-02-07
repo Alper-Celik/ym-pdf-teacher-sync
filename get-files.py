@@ -10,7 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 
-sharepoint_download_url = "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/eduman_mehmetakif_edu_tr/EtVND89XNJ9Pt0XAG1uigEgBzcposrNYqLOOWwfvLAekvQ?e=7G7xcV"
+sharepoint_download_url = "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EtNvTlDRs4pFrTi9F8Tar7kBFyyGzoxwWOlpkjDmhuTvkw?e=3vZdhv"
 download_dir = os.getcwd() + "/downloads"
 
 

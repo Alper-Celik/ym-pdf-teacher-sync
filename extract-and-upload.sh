@@ -29,8 +29,8 @@ setup-rclone-cfg(){
 
 upload-folder(){
   printf "\n\n>>uploading files and folders:\n"
-  cd "${FILE_DIR}/Algoritma ve Programlama 1"
-  rclone sync -vvv --progress . "onedrive:/Ders pdf'leri/1. Dönem (1. Sene)/Algoritma ve Programlama 1/Hocanın Güncelledikleri"
+  cd "${FILE_DIR}/Bilgisayar Mimarisi"
+  rclone sync -vvv --progress . "onedrive:/Ders pdf'leri/2. Dönem (1. Sene)/Bilgisayar Mimarisi/Hocanın Güncelledikleri"
   printf "\n>>uploaded files and folders"
 }
 
