@@ -12,6 +12,7 @@ from selenium.webdriver.firefox.options import Options
 
 sharepoint_download_url = "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EtNvTlDRs4pFrTi9F8Tar7kBFyyGzoxwWOlpkjDmhuTvkw?e=3vZdhv"
 download_dir = os.getcwd() + "/downloads"
+css_selector = "[aria-label='Download']"
 
 
 def check_zip(_) -> bool:
@@ -37,10 +38,10 @@ def main():
 
     print(">>> waiting for download button")
     _ = WebDriverWait(driver, 60).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "[data-id='download']")))
+        EC.presence_of_element_located((By.CSS_SELECTOR, css_selector)))
 
     print(">>> clicking download button")
-    elem = driver.find_element(By.CSS_SELECTOR, "[data-id='download']")
+    elem = driver.find_element(By.CSS_SELECTOR, css_selector)
     elem.click()
 
     print(">>> waiting for zip file to download")
