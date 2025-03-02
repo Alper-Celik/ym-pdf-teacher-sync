@@ -12,7 +12,7 @@ from selenium.webdriver.firefox.options import Options
 
 sharepoint_download_url = "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EtNvTlDRs4pFrTi9F8Tar7kBFyyGzoxwWOlpkjDmhuTvkw?e=3vZdhv"
 download_dir = os.getcwd() + "/downloads"
-css_selector = "[aria-label='Download']"
+css_selector = "[aria-label='Download'], [data-id='download']"
 
 
 def check_zip(_) -> bool:
