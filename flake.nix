@@ -1,7 +1,7 @@
 {
   description = "A Nix-flake-based Shell development environment";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:Alper-Celik/nixpkgs/geckodriver-update";
 
   outputs =
     { self, nixpkgs }:
