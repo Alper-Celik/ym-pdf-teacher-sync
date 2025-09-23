@@ -1,28 +1,25 @@
-# name: auto update files teacher gave us
-#
-# on:
-#   schedule:
-#     - cron: 0 5,14,17 * * *
-#   # Allows you to run this workflow manually from the Actions tab
-#   workflow_dispatch:
-# jobs:
-#   sync:
-#     timeout-minutes: 10
-#     runs-on: ubuntu-latest
-#     env:
-#       RCLONE_CONF_TEXT: ${{ secrets.RCLONE_CONF_TEXT }}
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v4
-#
-#       - name: Install Nix
-#         uses: DeterminateSystems/nix-installer-action@main
-#
-#       - name: activate environment
-#         uses: HatsuneMiku3939/direnv-action@v1
-#
-#       - name: download archive
-#         run: ./get-files.py
-#
-#       - name: extract archive and upload files
-#         run: ./extract-and-upload.sh
+name: auto update files teacher gave us
+
+on:
+  schedule:
+    - cron: 0 5,14,17 * * *
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  sync:
+    timeout-minutes: 45
+    runs-on: ubuntu-latest
+    env:
+      RCLONE_CONF_TEXT: ${{ secrets.RCLONE_CONF_TEXT }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@main
+
+      - name: activate environment
+        uses: HatsuneMiku3939/direnv-action@v1
+
+      - name: sync
+        run: python .
