@@ -1,7 +1,12 @@
 {
-  "BilgisayarMimarisi": {
-    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EtNvTlDRs4pFrTi9F8Tar7kBFyyGzoxwWOlpkjDmhuTvkw?e=3vZdhv",
-    "remote_dir": "onedrive:/Ders pdf'leri/2. Dönem (1. Sene)/Bilgisayar Mimarisi/Hocanın Güncelledikleri",
-    "zip_dir": "Bilgisayar Mimarisi"
+  "MühendislikEtiği": {
+    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EryK9KCoka9Do1XZERgEZLkBClLNsTYuNisEkoBmqqHrug?e=ugoPvW",
+    "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Mühendislik Etiği/Hocanın Güncelledikleri",
+    "zip_dir": "Mühendislik Etiği"
+  },
+  "VeriYapıları": {
+    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EnlGZp3xJNlDi_tAxzNV2RIBhBJxizi2GQEPj_M_sht48Q?e=VUjWHc",
+    "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Veri Yapıları/Hocanın Güncelledikleri",
+    "zip_dir": "Veri Yapıları"
   }
 }
