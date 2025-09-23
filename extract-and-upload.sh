@@ -16,7 +16,7 @@ trap clean-tmp-dir EXIT
 unzip-dir() {
 	printf "\n\n>>unziping:\n"
 	cd "$DOWNLOAD_DIR"
-	ark --batch ./*.zip -o "${FILE_DIR}"
+	ark -platform offscreen --batch ./*.zip -o "${FILE_DIR}"
 	printf "\n>>unzipped"
 }
 
