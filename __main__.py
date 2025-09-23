@@ -19,7 +19,7 @@ def main():
             get_files(source["url"], download_dir)
             subprocess.run(
                 [
-                    "extract-and-upload.sh",
+                    "./extract-and-upload.sh",
                     source["remote_dir"],
                     download_dir,
                     source["zip_dir"],
