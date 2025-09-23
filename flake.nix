@@ -46,7 +46,7 @@
                 firefox
 
                 rclone
-                unzip
+                kdePackages.ark
               ];
             };
         }
