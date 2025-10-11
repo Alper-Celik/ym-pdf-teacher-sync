@@ -3,6 +3,7 @@ from get_files import get_files
 import json
 import tempfile
 import subprocess
+import selenium.common.exceptions
 
 
 def load_sources():
@@ -15,11 +16,13 @@ def main():
     for key in sources:
         source = sources[key]
         print(f"> source {key} = {source}")
-        for _ in range(5):
+        retries = 5
+        for i in range(retries):
             try:
                 get_and_upload(key, source)
                 break
-            except TimeoutError:
+            except selenium.common.exceptions.TimeoutException:
+                print(f"\n>> timeout error, remaining retries : {retries - i - 1}\n")
                 pass
 
 
