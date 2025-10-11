@@ -15,17 +15,26 @@ def main():
     for key in sources:
         source = sources[key]
         print(f"> source {key} = {source}")
-        with tempfile.TemporaryDirectory(key) as download_dir:
-            get_files(source["url"], download_dir)
-            subprocess.run(
-                [
-                    "./extract-and-upload.sh",
-                    source["remote_dir"],
-                    download_dir,
-                    source["zip_dir"],
-                ],
-                check=True,
-            )
+        for _ in range(5):
+            try:
+                get_and_upload(key, source)
+                break
+            except TimeoutError:
+                pass
+
+
+def get_and_upload(key, source):
+    with tempfile.TemporaryDirectory(key) as download_dir:
+        get_files(source["url"], download_dir)
+        subprocess.run(
+            [
+                "./extract-and-upload.sh",
+                source["remote_dir"],
+                download_dir,
+                source["zip_dir"],
+            ],
+            check=True,
+        )
 
 
 if __name__ == "__main__":
