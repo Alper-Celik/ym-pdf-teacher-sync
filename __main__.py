@@ -24,6 +24,8 @@ def main():
             except selenium.common.exceptions.TimeoutException:
                 print(f"\n>> timeout error, remaining retries : {retries - i - 1}\n")
                 pass
+                if (i - 1) == retries:
+                    raise selenium.common.exceptions.TimeoutException()
 
 
 def get_and_upload(key, source):
