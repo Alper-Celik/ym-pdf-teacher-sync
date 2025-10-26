@@ -1,4 +1,4 @@
-import os
+from log import log
 from get_files import get_files
 import json
 import tempfile
@@ -15,14 +15,14 @@ def main():
     sources = load_sources()
     for key in sources:
         source = sources[key]
-        print(f"> source {key} = {source}")
+        log(f"> source {key} = {source}")
         retries = 5
         for i in range(retries):
             try:
                 get_and_upload(key, source)
                 break
             except selenium.common.exceptions.TimeoutException:
-                print(f"\n>> timeout error, remaining retries : {retries - i - 1}\n")
+                log(f"\n>> timeout error, remaining retries : {retries - i - 1}\n")
                 pass
                 if (i - 1) == retries:
                     raise selenium.common.exceptions.TimeoutException()

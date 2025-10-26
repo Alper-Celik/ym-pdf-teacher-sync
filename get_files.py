@@ -1,3 +1,4 @@
+from log import log
 import os
 from pathlib import Path
 from time import sleep
@@ -19,7 +20,7 @@ def check_zip(download_dir) -> bool:
 
 
 def get_files(sharepoint_download_url, download_dir):
-    print(f"> {download_dir = }")
+    log(f"> {download_dir = }")
     if not Path(download_dir).exists():
         Path(download_dir).mkdir()
 
@@ -32,20 +33,20 @@ def get_files(sharepoint_download_url, download_dir):
         "browser.helperApps.neverAsk.saveToDisk", "application/x-gzip"
     )
 
-    print(">>> going to website")
+    log(">>> going to website")
     driver = webdriver.Firefox(options=options)
     driver.get(sharepoint_download_url)
 
-    print(">>> waiting for download button")
+    log(">>> waiting for download button")
     _ = WebDriverWait(driver, 60).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
     )
 
-    print(">>> clicking download button")
+    log(">>> clicking download button")
     elem = driver.find_element(By.CSS_SELECTOR, css_selector)
     elem.click()
 
-    print(">>> waiting for zip file to download")
+    log(">>> waiting for zip file to download")
     _ = WebDriverWait(driver, 60).until(lambda _: check_zip(download_dir))
     sleep(5)
     driver.quit()
