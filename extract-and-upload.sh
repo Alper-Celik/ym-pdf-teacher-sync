@@ -32,7 +32,7 @@ setup-rclone-cfg() {
 upload-folder() {
 	printf "\n\n>>uploading files and folders:\n"
 	cd "${FILE_DIR}/${ZIP_DIR}"
-	rclone sync -vvv --progress . "$REMOTE_DIR"
+	rclone sync -v --progress . "$REMOTE_DIR"
 	printf "\n>>uploaded files and folders"
 }
 
