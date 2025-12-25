@@ -38,7 +38,7 @@ def get_files(sharepoint_download_url, download_dir):
     driver.get(sharepoint_download_url)
 
     log(">>> waiting for download button")
-    _ = WebDriverWait(driver, 60).until(
+    _ = WebDriverWait(driver, 600).until(
         EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
     )
 
@@ -47,6 +47,6 @@ def get_files(sharepoint_download_url, download_dir):
     elem.click()
 
     log(">>> waiting for zip file to download")
-    _ = WebDriverWait(driver, 60).until(lambda _: check_zip(download_dir))
+    _ = WebDriverWait(driver, 600).until(lambda _: check_zip(download_dir))
     sleep(5)
     driver.quit()
