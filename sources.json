@@ -1,22 +1,36 @@
 {
-  "MühendislikEtiği": {
-    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EryK9KCoka9Do1XZERgEZLkBClLNsTYuNisEkoBmqqHrug?e=ugoPvW",
-    "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Mühendislik Etiği/Hocanın Güncelledikleri",
-    "zip_dir": "Mühendislik Etiği"
+  "archive": {
+    "3. dönem": {
+      "MühendislikEtiği": {
+        "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EryK9KCoka9Do1XZERgEZLkBClLNsTYuNisEkoBmqqHrug?e=ugoPvW",
+        "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Mühendislik Etiği/Hocanın Güncelledikleri",
+        "zip_dir": "Mühendislik Etiği"
+      },
+      "VeriYapıları": {
+        "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EnlGZp3xJNlDi_tAxzNV2RIBhBJxizi2GQEPj_M_sht48Q?e=VUjWHc",
+        "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Veri Yapıları/Hocanın Güncelledikleri",
+        "zip_dir": "Veri Yapıları"
+      },
+      "MeslekiIngilizce1": {
+        "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/eduman_mehmetakif_edu_tr/EoVR3W_eBnhBr7tOjIxXHksBMu-FVGQER_d0YcFbAg9VKg?e=JQHGhe",
+        "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Mesleki İngilizce 1/Hocanın Güncelledikleri",
+        "zip_dir": "Mesleki İngilizce 1"
+      },
+      "WebTasarımıVeProgramlama": {
+        "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/eduman_mehmetakif_edu_tr/Er92rDM95kJNiGGSYTUjhOYBOnN9t4_ougQ3QgQIe4dZkw?e=5vvAAn",
+        "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Web Tasarımı ve Programlama/Hocanın Güncelledikleri",
+        "zip_dir": "Web Tasarımı ve Programlama"
+      }
+    }
   },
-  "VeriYapıları": {
-    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/ihsanpence_mehmetakif_edu_tr/EnlGZp3xJNlDi_tAxzNV2RIBhBJxizi2GQEPj_M_sht48Q?e=VUjWHc",
-    "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Veri Yapıları/Hocanın Güncelledikleri",
-    "zip_dir": "Veri Yapıları"
+  "VeriTabanıYönetimSistemleri": {
+    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/eduman_mehmetakif_edu_tr/IgD4f_JcdnuXQpHxLs_fPsZ-AXF4uFi1bUF971qP0jNzt2A?e=x5G1y6",
+    "remote_dir": "onedrive:/Ders pdf'leri/4. Dönem (2. Sene)/Veri Tabanı Yönetim Sistemleri/Hocanın Güncelledikleri",
+    "zip_dir": "VTYS 2026"
   },
-  "MeslekiIngilizce1": {
-    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/eduman_mehmetakif_edu_tr/EoVR3W_eBnhBr7tOjIxXHksBMu-FVGQER_d0YcFbAg9VKg?e=JQHGhe",
-    "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Mesleki İngilizce 1/Hocanın Güncelledikleri",
-    "zip_dir": "Mesleki İngilizce 1"
-  },
-  "WebTasarımıVeProgramlama": {
-    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/eduman_mehmetakif_edu_tr/Er92rDM95kJNiGGSYTUjhOYBOnN9t4_ougQ3QgQIe4dZkw?e=5vvAAn",
-    "remote_dir": "onedrive:/Ders pdf'leri/3. Dönem (2. Sene)/Web Tasarımı ve Programlama/Hocanın Güncelledikleri",
-    "zip_dir": "Web Tasarımı ve Programlama"
+  "MeslekiIngilizce": {
+    "url": "https://mehmetakifedutr-my.sharepoint.com/:f:/g/personal/eduman_mehmetakif_edu_tr/IgBuPb3WxePNS6BKxX0npuDzAaQao3r1qqvmAxCTVbgpwC8?e=DJTFVD",
+    "remote_dir": "onedrive:/Ders pdf'leri/4. Dönem (2. Sene)/Mesleki ingilizce 2/Hocanın Güncelledikleri",
+    "zip_dir": "Mesleki İngilizce 2"
   }
 }

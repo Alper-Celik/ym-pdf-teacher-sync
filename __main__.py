@@ -8,7 +8,9 @@ import selenium.common.exceptions
 
 def load_sources():
     with open("sources.json", "r") as file:
-        return json.load(file)
+        sources = json.load(file)
+        del sources["archive"]
+        return sources
 
 
 def main():
